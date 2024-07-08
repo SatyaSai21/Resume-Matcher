@@ -2,6 +2,7 @@ import streamlit as st
 from one import home
 from results import res
 from contact import contact
+import nltk
 try:
     nltk.data.find("tokenizers/punkt")
     nltk.find("stopwords")
