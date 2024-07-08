@@ -6,7 +6,9 @@ import nltk
 try:
     nltk.data.find("tokenizers/punkt")
     nltk.find("stopwords")
+    nltk.find("wordnet")
 except LookupError:
+    nltk.download('wordnet')
     nltk.download("stopwords")
     nltk.download("punkt")
 def main():
