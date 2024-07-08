@@ -1,1 +1,1 @@
-### Resume Matcher is an AI Based Free & Open Source Tool. To tailor your resume to a job description. Find the matching keywords, improve the readability and gain deep insights into your resume.
+### Resume Matcher is an AI Resume Analyzer. Find the matching keywords, improve the readability and gain deep insights into your resume.It uses Spacy and Vector Embeddings to find the similarity score.
