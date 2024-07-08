@@ -37,10 +37,10 @@ def find_path(folder_name):
     raise ValueError(f"Folder '{folder_name}' not found.")
 
 
-cwd = find_path("Resume-Matcher")
-READ_RESUME_FROM = os.path.join(cwd, "Data", "Processed", "Resumes")
-READ_JOB_DESCRIPTION_FROM = os.path.join(cwd, "Data", "Processed", "JobDescription")
-config_path = os.path.join(cwd, "scripts", "similarity")
+# cwd = find_path("Resume-Matcher")
+# READ_RESUME_FROM = os.path.join(cwd, "Data", "Processed", "Resumes")
+# READ_JOB_DESCRIPTION_FROM = os.path.join(cwd, "Data", "Processed", "JobDescription")
+# config_path = os.path.join(cwd, "scripts", "similarity")
 
 
 def read_config(filepath):
@@ -233,37 +233,37 @@ def get_similarity_score(resume_string, job_description_string):
     return search_result
 
 
-if __name__ == "__main__":
-    # To give your custom resume use this code
-    resume_dict = read_doc(
-        READ_RESUME_FROM
-        + "/resume_Achuth_CV_IND.pdf1bd14bd4-01c1-4700-b14e-ffedb4985104.json"
-    )
-    job_dict = read_doc(
-        READ_JOB_DESCRIPTION_FROM
-        + "/job_description_Job Title.pdfafaad93b-289e-4aa0-8530-22c55d97c3c0.json"
-    )
-    resume_keywords = resume_dict["extracted_keywords"]
-    job_description_keywords = job_dict["extracted_keywords"]
+# if __name__ == "__main__":
+#     # To give your custom resume use this code
+#     resume_dict = read_doc(
+#         READ_RESUME_FROM
+#         + "/resume_Achuth_CV_IND.pdf1bd14bd4-01c1-4700-b14e-ffedb4985104.json"
+#     )
+#     job_dict = read_doc(
+#         READ_JOB_DESCRIPTION_FROM
+#         + "/job_description_Job Title.pdfafaad93b-289e-4aa0-8530-22c55d97c3c0.json"
+#     )
+#     resume_keywords = resume_dict["extracted_keywords"]
+#     job_description_keywords = job_dict["extracted_keywords"]
 
-    resume_string = " ".join(resume_keywords)
-    jd_string = " ".join(job_description_keywords)
-    res1=do_tfidf(resume_string)
-    res2=do_tfidf(jd_string)
-    print("------------------TFIDF----------------------\n")
-    print(match(res1,res2))
-    print("------------------------------------------\n")
-    print(match(resume_string, jd_string))
-    print("-----------------GET SIMILARITY-------------------------\n")
-    final_result = get_similarity_score(resume_string, jd_string)
-    for r in final_result:
-        print(r)
-    print("------------------------------------------\n")
-    final_result = get_similarity_score(res1, res2)
-    for r in final_result:
-        print(r)
-    print("------------------------------------------\n")
-    print("--------------------TFIDF VECTOR SCORE----------------------\n")
-    score = get_similarity_tfidf(jd_string,resume_string)
-    print(score)
+#     resume_string = " ".join(resume_keywords)
+#     jd_string = " ".join(job_description_keywords)
+#     res1=do_tfidf(resume_string)
+#     res2=do_tfidf(jd_string)
+#     print("------------------TFIDF----------------------\n")
+#     print(match(res1,res2))
+#     print("------------------------------------------\n")
+#     print(match(resume_string, jd_string))
+#     print("-----------------GET SIMILARITY-------------------------\n")
+#     final_result = get_similarity_score(resume_string, jd_string)
+#     for r in final_result:
+#         print(r)
+#     print("------------------------------------------\n")
+#     final_result = get_similarity_score(res1, res2)
+#     for r in final_result:
+#         print(r)
+#     print("------------------------------------------\n")
+#     print("--------------------TFIDF VECTOR SCORE----------------------\n")
+#     score = get_similarity_tfidf(jd_string,resume_string)
+#     print(score)
 
