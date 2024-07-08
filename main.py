@@ -2,7 +2,12 @@ import streamlit as st
 from one import home
 from results import res
 from contact import contact
-
+try:
+    nltk.data.find("tokenizers/punkt")
+    nltk.find("stopwords")
+except LookupError:
+    nltk.download("stopwords")
+    nltk.download("punkt")
 def main():
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ["Home", "Results", "Contact"])
