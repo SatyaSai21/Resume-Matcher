@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 
-cwd = find_path("Resume-Matcher")
+#cwd = find_path("Resume-Matcher")
 READ_RESUME_FROM = os.path.join(cwd, "Data", "Processed", "Resumes/")
 READ_JOB_DESCRIPTION_FROM = os.path.join(cwd, "Data", "Processed", "JobDescription/")
 # from transformers import AutoTokenizer, AutoModel
