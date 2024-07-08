@@ -50,7 +50,10 @@ def res():
     st.write(selected_jd["clean_data"])
     annotation = "important"
     highlight_color = "#FFD700"
-
+    names = st.session_state['names']
+    scores = st.session_state['scores']
+    results = {"Resume File": names, "Score": [scores[name] for name in names]}
+    st.table(results)
     annotated_text_res1 = annotate_text_with_highlight(selected_jd["clean_data"], selected_jd["extracted_keywords"] + selected_jd["entities"], annotation, highlight_color)
     st.markdown(annotated_text_res1, unsafe_allow_html=True)
     #avs.add_vertical_space(7)
