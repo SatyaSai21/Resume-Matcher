@@ -44,7 +44,7 @@ more-itertools==9.1.0
 murmurhash==1.0.9
 networkx==3.1
 nltk==3.8.1
-numpy==1.25.1
+numpy
 packaging==23.1
 pandas==2.0.3
 pathvalidate==3.2.0
