@@ -73,3 +73,20 @@ For any queries or suggestions, users can contact the project maintainer via ema
 ## Demo
 
 https://resumeanalyzer-kud7cayme5dmjlasswv2kc.streamlit.app/
+
+## Pictures : 
+
+### Home : 
+
+![Screenshot 2024-08-18 120522](https://github.com/user-attachments/assets/c5a3b0ec-aa5d-4449-a9a5-f08818387827)
+
+
+### Keywords Identification :
+
+![Screenshot 2024-08-18 120435](https://github.com/user-attachments/assets/7e88ee1b-6627-4c6a-a55f-4e5a45ca7046)
+
+
+### Visualization :
+
+![Screenshot 2024-08-18 120501](https://github.com/user-attachments/assets/a9e776bf-68da-4f91-9960-790a1127b9e8)
+
