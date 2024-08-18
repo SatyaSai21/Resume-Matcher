@@ -72,5 +72,4 @@ For any queries or suggestions, users can contact the project maintainer via ema
 
 ## Demo
 
-
-https://resumeanalyzer-kud7cayme5dmjlasswv2kc.streamlit.app/?page=Home
+https://resumeanalyzer-kud7cayme5dmjlasswv2kc.streamlit.app/
